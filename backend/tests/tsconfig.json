@@ -1,0 +1,38 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "paths": {
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
+      "@models": ["src/models"],
+      "@models/*": ["src/models/*"],
+      "@services": ["src/services"],
+      "@services/*": ["src/services/*"],
+      "@controllers": ["src/controllers"],
+      "@controllers/*": ["src/controllers/*"],
+      "@routes": ["src/routes"],
+      "@routes/*": ["src/routes/*"],
+      "@middleware": ["src/middleware"],
+      "@middleware/*": ["src/middleware/*"],
+      "@validators": ["src/validators"],
+      "@validators/*": ["src/validators/*"],
+      "@repositories": ["src/repositories"],
+      "@repositories/*": ["src/repositories/*"],
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+      "@constants": ["src/constants"],
+      "@constants/*": ["src/constants/*"],
+      "@types": ["src/types"],
+      "@types/*": ["src/types/*"],
+      "@events": ["src/events"],
+      "@events/*": ["src/events/*"],
+      "@jobs": ["src/jobs"],
+      "@jobs/*": ["src/jobs/*"]
+    },
+    "rootDir": "..",
+    "types": ["node", "jest"]
+  },
+  "include": ["../src/**/*", "**/*"],
+  "exclude": ["../node_modules", "../dist"]
+}
